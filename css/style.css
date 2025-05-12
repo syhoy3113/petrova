@@ -1,0 +1,240 @@
+:root{
+    --color1: #05b1b1;
+    --color2: #52339a;
+}
+ section{
+    padding: 100px 0;
+}
+header{
+    padding: 200px 0;
+}
+footer{
+    padding: 60px 0;
+}
+header, footer{
+    background: url(../img/1.png),  var(--color1);
+    background: url(../img/фон.jpg), linear-gradient(to right, var(--color1) 0%,var(--color2) 100%);
+    background-size: contain;
+    
+}
+.itd_play{
+    background-color: var(--color1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 30px auto 30px;
+    transition: all 0.2s ease;
+}
+.itd_play:hover{
+    background-color: var(--color2);
+}
+.itd_triangle{
+    margin-right: -3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent var(--bs-white);
+}
+.btn-itd{
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 8px 30px;
+    color: var(--bs-white);
+    background-color: var(--color2);
+}
+.btn-itd:hover{
+    color: var(--bs-white);
+    background-color: var(--color1);
+}
+
+/* О курсе*/
+.about,  .shedule,.author, .buy{
+    background-color: #eee;
+}
+.about i {
+    font-size: 25px;
+    color:var(--color2)
+}
+.itd_circle{
+    /* margin: 0 auto 15px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--color2);
+    border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 100px;
+    height: 3px;
+    background-color: var(--color1);
+    margin: 15px auto 30px;
+}
+/* программа курса*/
+.accordion-button:not(.collapsed){
+    color: var(--bs-white);
+    background-color: var(--color2);
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%20fill='white'%20stroke='%23052c65'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='m2%205%206%206%206-6'/%3E%3C/svg%3E");
+}
+/* Цвет*/
+.color1{
+    color: var(--color1);
+}
+.color2{
+    color: var(--color2);
+}
+.bg1{
+   background-color: var(--color1);
+}
+.bg2{
+    background-color: var(--color2);
+}
+
+/* Для кого курс*/
+.forwhom  h5 {
+    padding: 50px;
+    border: 3px solid var(--color1);
+}
+
+/* процесс обучения */
+
+.learning h5 {
+    padding: 25px;
+    border: 3px solid var(--color1);
+}
+/* Об авторе */
+.author{
+    padding-bottom: 0;
+   
+}
+.itd_img{
+    max-width: 260px;
+    
+}
+.lineO{
+    width: 100px;
+    height: 5px;
+    background-color: var(--color2);
+    margin: 15px auto 30px;
+}
+.itd_img_otz{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--color2);
+}
+.img_pro{
+ 
+    object-fit: cover;
+}
+.card-text{
+    font-size: 25px;
+}
+.section_autor{
+    padding: 70px 0;
+}
+.navbar-nav{
+    margin: auto;
+}
+.navbar-nav li a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+    
+}
+
+.sticky{
+    
+    top: 0; 
+    position: fixed;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  .bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+  }
+
+  .bg-black1 {
+    --bs-bg-opacity: 1;
+    background-color: rgb(172,214,229) ;
+}
