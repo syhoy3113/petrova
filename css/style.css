@@ -5,9 +5,9 @@
  section{
     padding: 100px 0;
 }
-header{
+/* header{
     padding: 200px 0;
-}
+} */
 footer{
     padding: 60px 0;
 }
@@ -244,3 +244,32 @@ header, footer{
     
      
 }
+.flex{
+    display: flex;
+}
+.zag{
+    font-size: 80px;
+    text-align: center;
+}
+.zag1{
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.obo mnec{
+    max-width: 100px;
+}
+
+.navbar{
+--bs-navbar-nav-link-padding-x: 2rem;
+font-size: 20px;
+}
+
+/* .item__icon {
+    padding-left: 25px;
+    text-align-last: left;
+}
+.fa { font-size: 50px;
+} */
